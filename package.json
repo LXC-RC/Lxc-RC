@@ -1,0 +1,22 @@
+{
+  "name": "lxc",
+  "version": "1.0.0",
+  "description": "Biblioteca de LXC para nodeJS",
+  "main": "functions.js",
+  "dependencies": {
+    "clear": "0.0.1",
+    "clear-terminal": "0.0.2",
+    "cli-color": "^1.1.0",
+    "shelljs": "^0.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "orangepi@gogs2.qontu.com:DAW15/lxcRC.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
