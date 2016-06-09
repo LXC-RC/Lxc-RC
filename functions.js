@@ -122,7 +122,7 @@ module.exports = {
                     for (cont = 1; cont <= config.number; cont++) {
 
                         var name = config.name + cont;
-                        exec('lxc-create -n ' + name + ' -t ' + config.template + ' -- --user ' + name + ' --password ' + name, (error, stdout, stderr) => {
+                        exec('lxc-create -n ' + name + ' -t ' + config.template, (error, stdout, stderr) => {
                             clearInterval(timer);
                             if (error) {
                                 console.error(`exec error: ${error}`);
@@ -160,7 +160,7 @@ module.exports = {
                 }
                 else {
 
-                    exec('lxc-create -n ' + config.name + ' -t ' + config.template + ' -- --user ' + config.name + ' --password ' + config.name, (error, stdout, stderr) => {
+                    exec('lxc-create -n ' + config.name + ' -t ' + config.template , (error, stdout, stderr) => {
                         clearInterval(timer);
                         if (error) {
 
