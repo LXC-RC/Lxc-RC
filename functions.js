@@ -114,7 +114,7 @@ module.exports = {
             console.log("                                 |¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|");
             console.log("                                 |           VIRTUAL MACHINE CREATOR             |");
             console.log("                                 |_______________________________________________|");
-            askNumberMachine().then(askNameMachine).then(askTemplate).then(askUser).then(function () {
+            askNumberMachine().then(askNameMachine).then(askTemplate).then(function () {
 
                 var timer = setInterval(function () { process.stdout.write('.'); }, 1000);
                 if (config.number > 1) {
